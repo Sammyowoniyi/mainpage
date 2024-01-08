@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(186, 14%, 43%);
+}
+
+.calculator {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  max-width: 750px;
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 13px;
+}
+
+.bill-tip {
+  /* border: 1px solid greenyellow; */
+  width: 45%;
+}
+
+input,
+button {
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+  border: none;
+  width: 100%;
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.btns input,
+button {
+  border: none;
+  border-radius: 4px;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(189, 41%, 97%);
+  /* width: 88px;
+  height: 40px; */
+  text-align: center;
+}
+
+.btns button:focus,
+.calc button:focus {
+  background-color: hsl(173, 51%, 37%);
+}
+input:nth-child(6) {
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  font-size: 18px;
+}
+
+.btns input:hover,
+button:hover,
+.calc button:hover {
+  background-color: hsl(172, 67%, 45%);
+}
+
+.tip {
+  margin-top: 25px;
+}
+.btns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 11px;
+  margin-top: 10px;
+}
+
+.people {
+  margin-top: 25px;
+}
+
+.calc {
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  padding: 25px;
+  padding-top: 40px;
+  border-radius: 13px;
+  width: 47%;
+}
+
+.calc p {
+  color: hsl(186, 14%, 43%);
+  margin-top: 5px;
+}
+
+.calc input {
+  background-color: transparent;
+  color: hsl(172, 67%, 45%);
+  width: 45%;
+  font-size: 1.7rem;
+}
+
+.tip-amount {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calc button {
+  width: 100%;
+  background-color: white;
+  color: hsl(183, 100%, 15%);
+  padding: 7px;
+  margin-top: 75px;
+}
